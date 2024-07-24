@@ -85,6 +85,7 @@
             this.Controls.Add(this.btnManageUsers);
             this.Name = "AdminDashboard";
             this.Text = "Admin Dashboard";
+            this.Load += new System.EventHandler(this.AdminDashboard_Load);
             this.ResumeLayout(false);
 
         }

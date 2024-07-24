@@ -118,7 +118,7 @@
             this.lblUsername.AutoSize = true;
             this.lblUsername.Location = new System.Drawing.Point(30, 250);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(77, 17);
+            this.lblUsername.Size = new System.Drawing.Size(73, 16);
             this.lblUsername.TabIndex = 5;
             this.lblUsername.Text = "Username:";
             // 
@@ -127,7 +127,7 @@
             this.lblEmail.AutoSize = true;
             this.lblEmail.Location = new System.Drawing.Point(30, 290);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(46, 17);
+            this.lblEmail.Size = new System.Drawing.Size(44, 16);
             this.lblEmail.TabIndex = 6;
             this.lblEmail.Text = "Email:";
             // 
@@ -136,7 +136,7 @@
             this.lblPassword.AutoSize = true;
             this.lblPassword.Location = new System.Drawing.Point(30, 330);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(73, 17);
+            this.lblPassword.Size = new System.Drawing.Size(70, 16);
             this.lblPassword.TabIndex = 7;
             this.lblPassword.Text = "Password:";
             // 
@@ -145,7 +145,7 @@
             this.lblRole.AutoSize = true;
             this.lblRole.Location = new System.Drawing.Point(30, 370);
             this.lblRole.Name = "lblRole";
-            this.lblRole.Size = new System.Drawing.Size(41, 17);
+            this.lblRole.Size = new System.Drawing.Size(39, 16);
             this.lblRole.TabIndex = 8;
             this.lblRole.Text = "Role:";
             // 
@@ -185,6 +185,7 @@
             this.Controls.Add(this.listViewUsers);
             this.Name = "UserManagement";
             this.Text = "User Management";
+            this.Load += new System.EventHandler(this.UserManagement_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

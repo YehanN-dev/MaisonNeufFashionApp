@@ -15,7 +15,7 @@ namespace MaisonNeufFashionApp
 
         private void LoadCartItems()
         {
-            string connectionString = "your_connection_string_here";
+            string connectionString = "Server=localhost;Database=fashion_accessories_db;User ID=root;Password=;SslMode=none";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
@@ -86,6 +86,11 @@ namespace MaisonNeufFashionApp
                     MessageBox.Show("An error occurred while removing the item: " + ex.Message);
                 }
             }
+        }
+
+        private void cartListView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

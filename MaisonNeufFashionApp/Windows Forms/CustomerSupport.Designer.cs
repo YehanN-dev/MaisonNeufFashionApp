@@ -64,7 +64,7 @@
             this.lblName.AutoSize = true;
             this.lblName.Location = new System.Drawing.Point(30, 30);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(45, 17);
+            this.lblName.Size = new System.Drawing.Size(47, 16);
             this.lblName.TabIndex = 3;
             this.lblName.Text = "Name:";
             // 
@@ -73,7 +73,7 @@
             this.lblEmail.AutoSize = true;
             this.lblEmail.Location = new System.Drawing.Point(30, 70);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(46, 17);
+            this.lblEmail.Size = new System.Drawing.Size(44, 16);
             this.lblEmail.TabIndex = 4;
             this.lblEmail.Text = "Email:";
             // 
@@ -82,7 +82,7 @@
             this.lblMessage.AutoSize = true;
             this.lblMessage.Location = new System.Drawing.Point(30, 110);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(69, 17);
+            this.lblMessage.Size = new System.Drawing.Size(67, 16);
             this.lblMessage.TabIndex = 5;
             this.lblMessage.Text = "Message:";
             // 
@@ -108,8 +108,10 @@
             this.Controls.Add(this.txtName);
             this.Name = "CustomerSupport";
             this.Text = "Customer Support";
+            this.Load += new System.EventHandler(this.CustomerSupport_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

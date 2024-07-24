@@ -40,7 +40,7 @@
             this.lblName.AutoSize = true;
             this.lblName.Location = new System.Drawing.Point(30, 30);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(49, 17);
+            this.lblName.Size = new System.Drawing.Size(47, 16);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Name:";
             // 
@@ -49,7 +49,7 @@
             this.lblDescription.AutoSize = true;
             this.lblDescription.Location = new System.Drawing.Point(30, 70);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(83, 17);
+            this.lblDescription.Size = new System.Drawing.Size(78, 16);
             this.lblDescription.TabIndex = 1;
             this.lblDescription.Text = "Description:";
             // 
@@ -58,7 +58,7 @@
             this.lblPrice.AutoSize = true;
             this.lblPrice.Location = new System.Drawing.Point(30, 110);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(44, 17);
+            this.lblPrice.Size = new System.Drawing.Size(41, 16);
             this.lblPrice.TabIndex = 2;
             this.lblPrice.Text = "Price:";
             // 
@@ -79,9 +79,11 @@
             this.Controls.Add(this.lblName);
             this.Name = "AccessoryDetails";
             this.Text = "Accessory Details";
+            this.Load += new System.EventHandler(this.AccessoryDetails_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccessory)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

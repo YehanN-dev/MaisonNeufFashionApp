@@ -59,7 +59,7 @@
             this.lblPostTitle.AutoSize = true;
             this.lblPostTitle.Location = new System.Drawing.Point(30, 30);
             this.lblPostTitle.Name = "lblPostTitle";
-            this.lblPostTitle.Size = new System.Drawing.Size(70, 17);
+            this.lblPostTitle.Size = new System.Drawing.Size(66, 16);
             this.lblPostTitle.TabIndex = 2;
             this.lblPostTitle.Text = "Post Title:";
             // 
@@ -68,7 +68,7 @@
             this.lblPostContent.AutoSize = true;
             this.lblPostContent.Location = new System.Drawing.Point(30, 70);
             this.lblPostContent.Name = "lblPostContent";
-            this.lblPostContent.Size = new System.Drawing.Size(92, 17);
+            this.lblPostContent.Size = new System.Drawing.Size(85, 16);
             this.lblPostContent.TabIndex = 3;
             this.lblPostContent.Text = "Post Content:";
             // 
@@ -122,8 +122,10 @@
             this.Controls.Add(this.txtPostTitle);
             this.Name = "DiscussionForum";
             this.Text = "Discussion Forum";
+            this.Load += new System.EventHandler(this.DiscussionForum_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

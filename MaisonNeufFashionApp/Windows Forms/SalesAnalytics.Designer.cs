@@ -69,6 +69,7 @@
             this.Controls.Add(this.chartSales);
             this.Name = "SalesAnalytics";
             this.Text = "Sales Analytics";
+            this.Load += new System.EventHandler(this.SalesAnalytics_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chartSales)).EndInit();
             this.ResumeLayout(false);
 

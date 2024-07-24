@@ -39,5 +39,10 @@ namespace MaisonNeufFashionApp
             CustomerSupport customerSupport = new CustomerSupport();
             customerSupport.Show();
         }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

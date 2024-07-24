@@ -14,7 +14,7 @@ namespace MaisonNeufFashionApp
 
         private void LoadUsers()
         {
-            string connectionString = "your_connection_string_here";
+            string connectionString = "Server=localhost;Database=fashion_accessories_db;User ID=root;Password=;SslMode=none";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
@@ -110,6 +110,11 @@ namespace MaisonNeufFashionApp
             txtEmail.Text = "";
             txtPassword.Text = "";
             cmbRole.SelectedIndex = -1;
+        }
+
+        private void UserManagement_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

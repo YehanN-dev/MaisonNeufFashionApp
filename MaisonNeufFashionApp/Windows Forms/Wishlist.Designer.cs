@@ -95,7 +95,7 @@
             this.lblProductId.AutoSize = true;
             this.lblProductId.Location = new System.Drawing.Point(30, 250);
             this.lblProductId.Name = "lblProductId";
-            this.lblProductId.Size = new System.Drawing.Size(77, 17);
+            this.lblProductId.Size = new System.Drawing.Size(72, 16);
             this.lblProductId.TabIndex = 3;
             this.lblProductId.Text = "Product ID:";
             // 
@@ -104,7 +104,7 @@
             this.lblProductName.AutoSize = true;
             this.lblProductName.Location = new System.Drawing.Point(30, 290);
             this.lblProductName.Name = "lblProductName";
-            this.lblProductName.Size = new System.Drawing.Size(102, 17);
+            this.lblProductName.Size = new System.Drawing.Size(96, 16);
             this.lblProductName.TabIndex = 4;
             this.lblProductName.Text = "Product Name:";
             // 
@@ -140,6 +140,7 @@
             this.Controls.Add(this.listViewWishlist);
             this.Name = "Wishlist";
             this.Text = "Wishlist";
+            this.Load += new System.EventHandler(this.Wishlist_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

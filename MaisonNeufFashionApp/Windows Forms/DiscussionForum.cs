@@ -45,7 +45,7 @@ namespace MaisonNeufFashionApp
 
         private void LoadPosts()
         {
-            string connectionString = "your_connection_string_here";
+            string connectionString = "Server=localhost;Database=fashion_accessories_db;User ID=root;Password=;SslMode=none";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
@@ -75,6 +75,11 @@ namespace MaisonNeufFashionApp
         {
             txtPostTitle.Text = "";
             txtPostContent.Text = "";
+        }
+
+        private void DiscussionForum_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

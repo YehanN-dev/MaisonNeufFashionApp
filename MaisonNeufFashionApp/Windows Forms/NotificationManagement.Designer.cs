@@ -89,7 +89,7 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Location = new System.Drawing.Point(30, 250);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(39, 17);
+            this.lblTitle.Size = new System.Drawing.Size(36, 16);
             this.lblTitle.TabIndex = 3;
             this.lblTitle.Text = "Title:";
             // 
@@ -98,7 +98,7 @@
             this.lblMessage.AutoSize = true;
             this.lblMessage.Location = new System.Drawing.Point(30, 290);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(69, 17);
+            this.lblMessage.Size = new System.Drawing.Size(67, 16);
             this.lblMessage.TabIndex = 4;
             this.lblMessage.Text = "Message:";
             // 
@@ -134,8 +134,10 @@
             this.Controls.Add(this.listViewNotifications);
             this.Name = "NotificationManagement";
             this.Text = "Notification Management";
+            this.Load += new System.EventHandler(this.NotificationManagement_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

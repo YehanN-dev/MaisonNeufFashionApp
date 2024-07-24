@@ -47,6 +47,7 @@
             this.listViewOrderHistory.TabIndex = 0;
             this.listViewOrderHistory.UseCompatibleStateImageBehavior = false;
             this.listViewOrderHistory.View = System.Windows.Forms.View.Details;
+            this.listViewOrderHistory.SelectedIndexChanged += new System.EventHandler(this.listViewOrderHistory_SelectedIndexChanged);
             // 
             // columnHeaderOrderId
             // 

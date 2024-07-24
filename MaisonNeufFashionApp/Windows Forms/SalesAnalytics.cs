@@ -15,7 +15,7 @@ namespace MaisonNeufFashionApp
 
         private void LoadSalesData()
         {
-            string connectionString = "your_connection_string_here";
+            string connectionString = "Server=localhost;Database=fashion_accessories_db;User ID=root;Password=;SslMode=none";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
@@ -42,6 +42,11 @@ namespace MaisonNeufFashionApp
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             LoadSalesData();
+        }
+
+        private void SalesAnalytics_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -95,7 +95,7 @@
             this.lblUserId.AutoSize = true;
             this.lblUserId.Location = new System.Drawing.Point(30, 250);
             this.lblUserId.Name = "lblUserId";
-            this.lblUserId.Size = new System.Drawing.Size(58, 17);
+            this.lblUserId.Size = new System.Drawing.Size(55, 16);
             this.lblUserId.TabIndex = 3;
             this.lblUserId.Text = "User ID:";
             // 
@@ -104,7 +104,7 @@
             this.lblTotalAmount.AutoSize = true;
             this.lblTotalAmount.Location = new System.Drawing.Point(30, 290);
             this.lblTotalAmount.Name = "lblTotalAmount";
-            this.lblTotalAmount.Size = new System.Drawing.Size(94, 17);
+            this.lblTotalAmount.Size = new System.Drawing.Size(89, 16);
             this.lblTotalAmount.TabIndex = 4;
             this.lblTotalAmount.Text = "Total Amount:";
             // 
@@ -140,6 +140,7 @@
             this.Controls.Add(this.listViewOrders);
             this.Name = "OrderManagement";
             this.Text = "Order Management";
+            this.Load += new System.EventHandler(this.OrderManagement_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

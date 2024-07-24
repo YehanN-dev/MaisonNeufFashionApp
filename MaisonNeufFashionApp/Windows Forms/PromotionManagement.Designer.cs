@@ -107,7 +107,7 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Location = new System.Drawing.Point(30, 250);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(39, 17);
+            this.lblTitle.Size = new System.Drawing.Size(36, 16);
             this.lblTitle.TabIndex = 3;
             this.lblTitle.Text = "Title:";
             // 
@@ -116,7 +116,7 @@
             this.lblDescription.AutoSize = true;
             this.lblDescription.Location = new System.Drawing.Point(30, 290);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(83, 17);
+            this.lblDescription.Size = new System.Drawing.Size(78, 16);
             this.lblDescription.TabIndex = 4;
             this.lblDescription.Text = "Description:";
             // 
@@ -139,7 +139,7 @@
             this.lblStartDate.AutoSize = true;
             this.lblStartDate.Location = new System.Drawing.Point(30, 410);
             this.lblStartDate.Name = "lblStartDate";
-            this.lblStartDate.Size = new System.Drawing.Size(76, 17);
+            this.lblStartDate.Size = new System.Drawing.Size(69, 16);
             this.lblStartDate.TabIndex = 7;
             this.lblStartDate.Text = "Start Date:";
             // 
@@ -148,7 +148,7 @@
             this.lblEndDate.AutoSize = true;
             this.lblEndDate.Location = new System.Drawing.Point(30, 450);
             this.lblEndDate.Name = "lblEndDate";
-            this.lblEndDate.Size = new System.Drawing.Size(70, 17);
+            this.lblEndDate.Size = new System.Drawing.Size(66, 16);
             this.lblEndDate.TabIndex = 8;
             this.lblEndDate.Text = "End Date:";
             // 
@@ -188,8 +188,10 @@
             this.Controls.Add(this.listViewPromotions);
             this.Name = "PromotionManagement";
             this.Text = "Promotion Management";
+            this.Load += new System.EventHandler(this.PromotionManagement_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

@@ -22,7 +22,7 @@ namespace MaisonNeufFashionApp
         private void LoadAccessoryDetails()
         {
             // Retrieve the accessory details from the database using the accessoryId
-            string connectionString = "your_connection_string_here";
+            string connectionString = "Server=localhost;Database=fashion_accessories_db;User ID=root;Password=;SslMode=none";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
@@ -85,6 +85,11 @@ namespace MaisonNeufFashionApp
                     MessageBox.Show("An error occurred while saving accessory details: " + ex.Message);
                 }
             }
+        }
+
+        private void AddEditAccessory_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

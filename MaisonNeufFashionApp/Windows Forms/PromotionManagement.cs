@@ -14,7 +14,7 @@ namespace MaisonNeufFashionApp
 
         private void LoadPromotions()
         {
-            string connectionString = "your_connection_string_here";
+            string connectionString = "Server=localhost;Database=fashion_accessories_db;User ID=root;Password=;SslMode=none";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
@@ -111,6 +111,11 @@ namespace MaisonNeufFashionApp
             txtDescription.Text = "";
             dtpStartDate.Value = DateTime.Now;
             dtpEndDate.Value = DateTime.Now;
+        }
+
+        private void PromotionManagement_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

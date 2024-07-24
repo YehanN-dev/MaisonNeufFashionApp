@@ -33,5 +33,10 @@ namespace MaisonNeufFashionApp
             Settings settings = new Settings();
             settings.Show();
         }
+
+        private void AdminDashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

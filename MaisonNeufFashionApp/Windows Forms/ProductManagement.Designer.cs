@@ -22,6 +22,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "ProductManagement";
             this.Text = "Product Management";
+            this.Load += new System.EventHandler(this.ProductManagement_Load);
             this.ResumeLayout(false);
 
         }

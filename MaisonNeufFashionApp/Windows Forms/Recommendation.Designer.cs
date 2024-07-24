@@ -52,6 +52,7 @@
             this.listViewRecommendations.TabIndex = 0;
             this.listViewRecommendations.UseCompatibleStateImageBehavior = false;
             this.listViewRecommendations.View = System.Windows.Forms.View.Details;
+            this.listViewRecommendations.SelectedIndexChanged += new System.EventHandler(this.listViewRecommendations_SelectedIndexChanged);
             // 
             // columnHeaderAccessoryId
             // 

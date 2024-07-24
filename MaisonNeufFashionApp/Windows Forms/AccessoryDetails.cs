@@ -24,5 +24,10 @@ namespace MaisonNeufFashionApp
             lblPrice.Text = $"Price: {price:C}";
             pictureBoxAccessory.ImageLocation = imageUrl;
         }
+
+        private void AccessoryDetails_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

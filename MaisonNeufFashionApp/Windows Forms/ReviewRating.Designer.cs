@@ -121,7 +121,7 @@
             this.lblUserId.AutoSize = true;
             this.lblUserId.Location = new System.Drawing.Point(30, 250);
             this.lblUserId.Name = "lblUserId";
-            this.lblUserId.Size = new System.Drawing.Size(58, 17);
+            this.lblUserId.Size = new System.Drawing.Size(55, 16);
             this.lblUserId.TabIndex = 5;
             this.lblUserId.Text = "User ID:";
             // 
@@ -130,7 +130,7 @@
             this.lblProductId.AutoSize = true;
             this.lblProductId.Location = new System.Drawing.Point(30, 290);
             this.lblProductId.Name = "lblProductId";
-            this.lblProductId.Size = new System.Drawing.Size(78, 17);
+            this.lblProductId.Size = new System.Drawing.Size(72, 16);
             this.lblProductId.TabIndex = 6;
             this.lblProductId.Text = "Product ID:";
             // 
@@ -139,7 +139,7 @@
             this.lblRating.AutoSize = true;
             this.lblRating.Location = new System.Drawing.Point(30, 330);
             this.lblRating.Name = "lblRating";
-            this.lblRating.Size = new System.Drawing.Size(56, 17);
+            this.lblRating.Size = new System.Drawing.Size(49, 16);
             this.lblRating.TabIndex = 7;
             this.lblRating.Text = "Rating:";
             // 
@@ -148,7 +148,7 @@
             this.lblReviewText.AutoSize = true;
             this.lblReviewText.Location = new System.Drawing.Point(30, 370);
             this.lblReviewText.Name = "lblReviewText";
-            this.lblReviewText.Size = new System.Drawing.Size(88, 17);
+            this.lblReviewText.Size = new System.Drawing.Size(84, 16);
             this.lblReviewText.TabIndex = 8;
             this.lblReviewText.Text = "Review Text:";
             // 
@@ -188,8 +188,10 @@
             this.Controls.Add(this.listViewReviews);
             this.Name = "ReviewRating";
             this.Text = "Review Rating";
+            this.Load += new System.EventHandler(this.ReviewRating_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

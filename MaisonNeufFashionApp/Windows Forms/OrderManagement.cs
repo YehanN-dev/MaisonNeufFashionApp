@@ -14,7 +14,7 @@ namespace MaisonNeufFashionApp
 
         private void LoadOrders()
         {
-            string connectionString = "your_connection_string_here";
+            string connectionString = "Server=localhost;Database=fashion_accessories_db;User ID=root;Password=;SslMode=none";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
@@ -107,6 +107,11 @@ namespace MaisonNeufFashionApp
         {
             txtUserId.Text = "";
             txtTotalAmount.Text = "";
+        }
+
+        private void OrderManagement_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

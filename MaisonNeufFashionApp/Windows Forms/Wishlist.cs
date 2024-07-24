@@ -14,7 +14,7 @@ namespace MaisonNeufFashionApp
 
         private void LoadWishlist()
         {
-            string connectionString = "your_connection_string_here";
+            string connectionString = "Server=localhost;Database=fashion_accessories_db;User ID=root;Password=;SslMode=none";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
@@ -108,6 +108,11 @@ namespace MaisonNeufFashionApp
         {
             txtProductId.Text = "";
             txtProductName.Text = "";
+        }
+
+        private void Wishlist_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

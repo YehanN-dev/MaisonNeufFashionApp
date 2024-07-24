@@ -9,5 +9,10 @@ namespace MaisonNeufFashionApp
         {
             InitializeComponent();
         }
+
+        private void ProductManagement_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

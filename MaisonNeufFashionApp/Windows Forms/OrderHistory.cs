@@ -24,8 +24,7 @@ namespace MaisonNeufFashionApp
                 MessageBox.Show("No user logged in.");
                 return;
             }
-
-            string connectionString = "your_connection_string_here";
+            string connectionString = "Server=localhost;Database=fashion_accessories_db;User ID=root;Password=;SslMode=none";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
@@ -52,6 +51,11 @@ namespace MaisonNeufFashionApp
                     MessageBox.Show("An error occurred while loading order history: " + ex.Message);
                 }
             }
+        }
+
+        private void listViewOrderHistory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

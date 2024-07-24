@@ -73,7 +73,7 @@
             this.lblName.AutoSize = true;
             this.lblName.Location = new System.Drawing.Point(30, 30);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(49, 17);
+            this.lblName.Size = new System.Drawing.Size(47, 16);
             this.lblName.TabIndex = 4;
             this.lblName.Text = "Name:";
             // 
@@ -82,7 +82,7 @@
             this.lblDescription.AutoSize = true;
             this.lblDescription.Location = new System.Drawing.Point(30, 70);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(83, 17);
+            this.lblDescription.Size = new System.Drawing.Size(78, 16);
             this.lblDescription.TabIndex = 5;
             this.lblDescription.Text = "Description:";
             // 
@@ -91,7 +91,7 @@
             this.lblPrice.AutoSize = true;
             this.lblPrice.Location = new System.Drawing.Point(30, 150);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(44, 17);
+            this.lblPrice.Size = new System.Drawing.Size(41, 16);
             this.lblPrice.TabIndex = 6;
             this.lblPrice.Text = "Price:";
             // 
@@ -100,7 +100,7 @@
             this.lblImageUrl.AutoSize = true;
             this.lblImageUrl.Location = new System.Drawing.Point(30, 190);
             this.lblImageUrl.Name = "lblImageUrl";
-            this.lblImageUrl.Size = new System.Drawing.Size(68, 17);
+            this.lblImageUrl.Size = new System.Drawing.Size(68, 16);
             this.lblImageUrl.TabIndex = 7;
             this.lblImageUrl.Text = "Image Url:";
             // 
@@ -128,8 +128,10 @@
             this.Controls.Add(this.txtName);
             this.Name = "AddEditAccessory";
             this.Text = "Add/Edit Accessory";
+            this.Load += new System.EventHandler(this.AddEditAccessory_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
